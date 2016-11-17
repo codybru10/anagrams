@@ -1,9 +1,9 @@
 require('rspec')
 require('pry')
-require('template.rb')
+require('anagrams.rb')
 
-describe('ClassType#template') do
+describe('String#anagrams') do
   it("what it does") do
-    expect("input".beats("paramater")).to(eq("output"))
+    expect("input".anagram("paramater")).to(eq("output"))
   end
 end

@@ -7,12 +7,12 @@ describe('String#anagrams') do
   #   expect("fox".anagram?("fox")).to(eq(true))
   # end
   it("tests for non-anagram") do
-    expect("brake".anagram?("beak")).to(eq(""))
+    expect("brake".anagram("beak")).to(eq(""))
   end
   it("tests for anagram with correct length") do
-    expect("brake".anagram?("break")).to(eq("break"))
+    expect("brake".anagram("break")).to(eq("break"))
   end
   it("tests for anagram with one correct and one incorrect") do
-    expect("brake".anagram?("break pancake")).to(eq("break"))
+    expect("brake".anagram("break pancake")).to(eq("break"))
   end
 end

@@ -1,5 +1,5 @@
 class String
-  define_method(:anagram?) do |testString|
+  define_method(:anagram) do |testString|
     result = ""
     resultArray = []
     objectArray = self.split("")
